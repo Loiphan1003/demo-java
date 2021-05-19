@@ -7,10 +7,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 //import java.sql.Statement;
 import java.sql.ResultSet;
-//import java.util.ArrayList;
-//import java.util.List;
-//import java.util.ArrayList;
-//import java.util.List;
+import java.util.ArrayList;
+import java.util.List;
+
 
 
 
@@ -46,9 +45,49 @@ public class userAccount {
         }
         return null;
     }
-//    public static void main(String [] args){
-//        userAccount login = new userAccount(); 
-//        Account a = login.checkLogin("loi","12345");
-//        System.out.println(a);
+    
+    public List<Account> getAllAccount(){
+        List<Account> list = new ArrayList<>();
+        String query = "select * from Account where isAdmin = 0";        
+        
+        try{
+            conn = new connectDB().getConnection();
+            ps = conn.prepareStatement(query);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                list.add(new Account(
+                        rs.getString(1),
+                        rs.getString(2),
+                        rs.getString(3)
+                ));
+            }
+            System.out.println("Lay thong tin thanh cong");
+        }catch(Exception e){
+        
+        }
+        
+        return list;
+    }
+    
+    
+//    public int sumA(){
+//        String query = "select count(*) from Account where isAdmin = 0";
+//        
+//        try{
+//            conn = new connectDB().getConnection();
+//            ps = conn.prepareStatement(query);
+//            ps.executeUpdate();
+//        }catch(Exception e){
+//        
+//        }
+//        return 0;
 //    }
+    
+    
+    public static void main(String [] args){
+        userAccount login = new userAccount(); 
+        List<Account> a = login.getAllAccount();
+        System.out.println(a.size());
+        
+    }
 }

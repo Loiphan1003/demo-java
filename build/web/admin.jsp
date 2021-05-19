@@ -64,7 +64,7 @@
                 <!--Begin: Box-User -->
                 <div class="box-customer">
                     <i class="box-user-icon ti-user"></i>
-                    <h2 class="number">0</h2>
+                    <h2 class="number">${sumA}</h2>
                 </div>
                 <!--End: Box-User -->
                 <!--Begin: Box-order -->
@@ -76,7 +76,7 @@
                 <!--Begin: Box-product -->
                 <div class="box-product">
                     <i class="box-product-icon ti-package"></i>
-                    <h2 class="number">${sum}</h2>
+                    <h2 class="number">${sumP}</h2>
                 </div>
                 <!--End: Box-product -->
                 <!--Begin: Box-income -->

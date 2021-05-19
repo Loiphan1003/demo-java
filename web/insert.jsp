@@ -17,7 +17,7 @@
                 <ul id="nav">
                     <li><a href="/Demo/home">HOME</a></li>
                     <li><a href="">BAND</a></li>
-                    <li><a href="">TOUR</a></li>
+                    <li><a href="admin-product">PRODUCT</a></li>
                     <li><a href="">CONTACT</a></li>
 
                     <li>
@@ -61,30 +61,30 @@
             </div>
 
             <div id="admin-content">
-                <!--Begin: Box-User -->
+<!--                Begin: Box-User 
                 <div class="box-customer">
                     <i class="box-user-icon ti-user"></i>
-                    <h2 class="number">0</h2>
+                    <h2 class="number">${sumA}</h2>
                 </div>
-                <!--End: Box-User -->
-                <!--Begin: Box-order -->
+                End: Box-User 
+                Begin: Box-order 
                 <div class="box-order">
                     <i class="box-order-icon ti-shopping-cart"></i>
                     <h2 class="number">0</h2>
                 </div>
-                <!--End: Box-order -->
-                <!--Begin: Box-product -->
+                End: Box-order 
+                Begin: Box-product 
                 <div class="box-product">
                     <i class="box-product-icon ti-package"></i>
-                    <h2 class="number">${sum}</h2>
+                    <h2 class="number">${sumP}</h2>
                 </div>
-                <!--End: Box-product -->
-                <!--Begin: Box-income -->
+                End: Box-product 
+                Begin: Box-income 
                 <div class="box-income">
                     <i class="box-income-icon ti-money"></i>
                     <h2 class="number">0</h2>
                 </div>
-                <!--End: Box-income -->
+                End: Box-income -->
 
                 <div class="letf-content">
                     <div class="category">

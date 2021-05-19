@@ -141,6 +141,7 @@ html{
 
 /* Card*/
 .product-form{
+    padding-left: 65px;
     text-decoration: none;
     width: 400px;
     float: left;
@@ -186,6 +187,7 @@ html{
 
 /* ADMIN PAGE */
 #admin-content{
+    padding-left: 45px;
     height: 1070px;
     background-color: grey;
 }

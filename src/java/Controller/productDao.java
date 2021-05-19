@@ -127,15 +127,15 @@ public class productDao {
     public int sumP(){
         productDao pd = new productDao();
         List<Product> p = pd.getAllProduct();
-//        System.out.println(p.size());
+        System.out.println("Sum thanh cong");
         return p.size();
         
     }
     
     public static void main(String [] args){
         productDao pd = new productDao(); 
-        System.out.println(pd.sumP());
-        
+        List<Product> p = pd.getAllProduct();
+        for(Product i:p){}
     }
     
 }
