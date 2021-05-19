@@ -1,0 +1,381 @@
+/* Reset CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    background: white;
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+}
+
+#nav {  
+    display: inline-block;
+}
+
+#nav ul{
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+   position: relative;
+}
+
+#nav > li > a {
+    color: white;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav  li:hover  a,
+#nav > li:hover > a{
+    color: black;
+    background-color:bisque;
+}
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: white;
+    box-shadow:  0 0 10px rgba(0, 0,0.3);
+}
+
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+    
+}
+
+#nav .nav-icon-down{
+    font-size: 14px;
+}
+/*Shop-Button */
+.shop-button{
+    float: right;
+    padding: 0px 22px;
+}
+#header .shop-icon{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
+#header .shop-button:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
+
+
+
+/*User-Button */
+#header .user-button{
+    float: right;
+    text-decoration: none;
+    padding: 0px 22px;
+} 
+#header .user-icon{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
+#header .user-button:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
+
+
+/*Search-Button */
+#header .search-button{
+    float: right;
+    padding: 0px 22px;
+    cursor: pointer;
+
+}
+
+#header .search-icon{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#header .search-button:hover{
+    background-color: bisque;
+}
+
+
+
+
+.slider-img{
+    padding-top: 40%;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Conten*/
+#content{
+    height: 1200px;
+    padding:20px 15px ;
+}
+
+/* Card*/
+.product-form{
+    text-decoration: none;
+    width: 400px;
+    float: left;
+}
+.card{
+    text-decoration: none;
+    width: 448px;
+    height: 286px;
+}
+.product-detailt{
+    text-decoration: none;
+}
+
+
+.card-image{
+    padding-top: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.card-name{
+    text-decoration: none;
+    color: black;
+    /* background-position: center; */
+    padding-left: 60px;
+}
+.card-price{
+    color: black;
+    text-decoration: none;
+    padding-left: 60px;
+}
+
+#footer{
+    height: 300px;
+    background-color: black;
+}
+.icon-footer{
+    padding-top: 20px;
+    color: white;
+}
+/* LOGIN */
+
+
+
+/* ADMIN PAGE */
+#admin-content{
+    height: 1070px;
+    background-color: grey;
+}
+
+
+.number{
+    float: right;
+    line-height: 50px;
+    font-size: 80px;
+    padding: 58px 28px;
+}
+/* Begin: Box-User */
+.box-customer{
+    /* padding-top: 20px; */
+    width: 300px;
+    height: 150px;
+    background-color:white;
+    float: left;
+    padding: 0px 20px;
+    
+}
+.box-user-icon{
+    font-size: 70px;
+    line-height: 50px;
+    float: right;
+    padding: 42px 28px;
+}
+
+/* End: Box-User */
+/* Begin: Box-Order */
+.box-order{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    float: left;
+    margin-left: 20px;
+    
+}
+.box-order-icon{
+    font-size: 70px;
+    line-height: 50px;
+    float: right;
+    padding: 42px 28px;
+}
+
+/* End: Box-Order */
+
+/* Begin: Box-Income */
+.box-income{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    float: left;
+    /* padding: 42px 28px; */
+    margin-left: 20px;
+    
+}
+
+.box-income-icon{
+    font-size: 70px;
+    line-height: 50px;
+    float: right;
+    padding: 42px 28px;
+}
+/* End: Box-Income */
+/* Begin: Box-Product */
+.box-product{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    float: left;
+    margin-left: 20px;
+    
+}
+.box-product-icon{
+    font-size: 70px;
+    line-height: 50px;
+    float: right;
+    padding: 42px 28px;
+}
+/* End: Box-Icome */
+/* Begin: Left-Content*/
+
+.letf-content{
+    margin-top: 20px;
+    width: 941px;
+    height: 900px;
+    background-color: white;
+    float: left;
+} 
+.category{
+    background-color: black;
+    color: white;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.product-shoes{
+    width: 770px;
+    float: left;
+}
+.insert-product{
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.insert{
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+.info-product-shoes{
+    padding-top: 15px;
+    padding-left: 20px;
+    width: 856px;
+    float: left;
+}
+.id{
+    float: left;
+    padding-right: 20px;
+}
+.name{
+    
+}
+.buttom{
+    height: 69px;
+    width: 85px;
+    float: left;
+    /* background-color: green; */
+    padding-top: 20px;
+    padding-left: 7px;
+    text-decoration: none;
+}
+.update{
+    text-decoration: none;
+}
+.delete{
+    text-decoration: none;
+}
+.buttom-pencil{
+    /* background-color:  black; */
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.buttom-trash{
+    /* background-color:  black; */
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+
+}
+/* End: Left-Content*/
+/* Begin: Right-Content*/
+.right-content{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 300px;
+    height: 900px;
+    background-color: white;
+    float: left;
+    /* display: block; */
+}
+/* End: Right-Content*/
+
+
+/* Detail */
+#detail-product{
+    width: 1423px;
+    height: 500px;
+    float: left;
+}
+
+.left-detail{
+    width: 400px;
+    height: 400px; 
+    float: left;
+}
+.size{
+    float: left;
+}
+
+.right-detail{
+    float: left;
+    width: 1023px;
+    height: 400px
+}
+.detail-img{
+    width: 700px;
+    height: 400px;
+}
