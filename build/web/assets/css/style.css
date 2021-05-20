@@ -301,24 +301,43 @@ html{
 }
 
 .info-product-shoes{
-    padding-top: 15px;
+    
     padding-left: 20px;
     width: 856px;
     float: left;
 }
-.id{
+.info-product{
+    padding-top: 30px;
     float: left;
-    padding-right: 20px;
+}
+
+.id{
+    width: 546px;
 }
 .name{
-    
+    width: 546px;
+}
+.price{
+    width: 546px;
+}
+.Amount{
+    width: 546px;
+}
+
+.image{
+    float: left;
+}
+
+.image img{
+    width: 200px;
+    float:left;
 }
 .buttom{
     height: 69px;
     width: 85px;
-    float: left;
+    float: right;
     /* background-color: green; */
-    padding-top: 20px;
+    padding-top: 60px;
     padding-left: 7px;
     text-decoration: none;
 }
@@ -366,6 +385,7 @@ html{
     position: center;
 }
 .user-name-all{
+    font-size: 38px;
     padding-top: 20px;
     padding-left: 20px;
 }

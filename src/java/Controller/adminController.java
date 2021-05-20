@@ -22,30 +22,23 @@ public class adminController extends HttpServlet {
     protected void processRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
 
-        try {
-            userAccount uA = new userAccount();
-            List<Account> a = uA.getAllAccount();
-            req.setAttribute("sumA", a.size());
+        userAccount uA = new userAccount();
+        List<Account> listA = uA.getAllAccount();
+        req.setAttribute("sumA", listA.size());
+        req.setAttribute("ListA", listA);
+        
+        
+        productDao pd = new productDao();
+        List<Product> list = pd.getAllProduct();
+        req.setAttribute("ListP", list);
+        req.setAttribute("sumP", pd.sumP());
 
-
-            productDao pd = new productDao();
-            List<Product> list = pd.getAllProduct();
-            req.setAttribute("ListP", list);    
-            req.setAttribute("sumP", pd.sumP());
-
-            req.getRequestDispatcher("admin.jsp").forward(req, resp);
-        } catch (Exception e) {
-
-        }
+        req.getRequestDispatcher("admin.jsp").forward(req, resp);
 
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-//      
-//        
-        
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {   
         processRequest(req, resp);
     }
 
