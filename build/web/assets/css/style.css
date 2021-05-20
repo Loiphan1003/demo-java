@@ -353,6 +353,22 @@ html{
     float: left;
     /* display: block; */
 }
+
+.user-top{
+    height: 53px;
+    background-color: black;
+}
+.user-name{
+    color: white;
+    font-size: 20px;
+    padding-top: 17px;
+    padding-left: 10px;
+    position: center;
+}
+.user-name-all{
+    padding-top: 20px;
+    padding-left: 20px;
+}
 /* End: Right-Content*/
 
 

@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/NETBeens/Demo/web/admin.jsp</file>
+            <file>file:/D:/NETBeens/Demo/src/java/Model/Account.java</file>
+            <file>file:/D:/NETBeens/Demo/src/java/Controller/adminController.java</file>
+            <file>file:/D:/NETBeens/Demo/src/java/Controller/userAccount.java</file>
+            <file>file:/D:/NETBeens/Demo/web/index.jsp</file>
+        </group>
     </open-files>
 </project-private>

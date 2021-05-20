@@ -69,25 +69,15 @@ public class userAccount {
         return list;
     }
     
-    
-//    public int sumA(){
-//        String query = "select count(*) from Account where isAdmin = 0";
-//        
-//        try{
-//            conn = new connectDB().getConnection();
-//            ps = conn.prepareStatement(query);
-//            ps.executeUpdate();
-//        }catch(Exception e){
-//        
-//        }
-//        return 0;
-//    }
-    
-    
     public static void main(String [] args){
         userAccount login = new userAccount(); 
         List<Account> a = login.getAllAccount();
-        System.out.println(a.size());
+        for(Account o : a ){
+            System.out.println(o.getUsername());
+        }
+
+//        Account a = login.checkLogin("admin", "admin");
+//        System.out.println(a);  
         
     }
 }

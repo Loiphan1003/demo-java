@@ -1,7 +1,5 @@
-<!-- <%-- Document : index Created on : Apr 23, 2021, 4:14:01 PM Author : pvtha --%> -->
-
-<!-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@page language="java" contentType="text/html" pageEncoding="UTF-8" %> -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page language="java" contentType="text/html" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +20,7 @@
                     <li><a href="">BAND</a></li>
                         <c:if test="${sessionScope.acc.isAdmin == 1}">
                             <li><a href="admin-product">PRODUCT</a></li>
-                        </c:if>   
+                        </c:if>
                     <li><a href="">CONTACT</a></li>
 
                     <li>
@@ -54,9 +52,9 @@
 
                         <i class="user-icon ti-user"></i>
                         <!-- <ul class="subnav-user">
-                                <li><a href="">Đăng nhập</a></li>
-                                <li>Đăng xuất </li>
-                            </ul> -->
+                        <li><a href="">Đăng nhập</a></li>
+                        <li>Đăng xuất </li>
+                    </ul> -->
 
                     </div>
                 </a>
