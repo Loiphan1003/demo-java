@@ -69,15 +69,15 @@ public class userAccount {
         return list;
     }
     
-    public static void main(String [] args){
-        userAccount login = new userAccount(); 
-        List<Account> a = login.getAllAccount();
-        for(Account o : a ){
-            System.out.println(o.getUsername());
-        }
-
-//        Account a = login.checkLogin("admin", "admin");
-//        System.out.println(a);  
-        
-    }
+//    public static void main(String [] args){
+//        userAccount login = new userAccount(); 
+//        List<Account> a = login.getAllAccount();
+//        for(Account o : a ){
+//            System.out.println(o.getUsername());
+//        }
+//
+////        Account a = login.checkLogin("admin", "admin");
+////        System.out.println(a);  
+//        
+//    }
 }

@@ -117,12 +117,7 @@
                         <div class="user-top">
                             <h1 class="user-name">User</h1>
                         </div>
-                        <c:forEach items="${ListA}" var="o">
-                            <div class="user-name-all">
-                                <p>${o.username}</p>
-                            </div>
-
-                        </c:forEach>
+                        
                     </div>
                 </div>
 

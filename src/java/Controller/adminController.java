@@ -7,6 +7,7 @@ package Controller;
 
 import Model.Account;
 import Model.Product;
+import java.lang.*;
 import java.io.IOException;
 import java.util.List;
 import javax.servlet.ServletException;
@@ -25,11 +26,11 @@ public class adminController extends HttpServlet {
             userAccount uA = new userAccount();
             List<Account> a = uA.getAllAccount();
             req.setAttribute("sumA", a.size());
-//        req.setAttribute("ListA", a);
+
 
             productDao pd = new productDao();
             List<Product> list = pd.getAllProduct();
-            req.setAttribute("ListP", list);
+            req.setAttribute("ListP", list);    
             req.setAttribute("sumP", pd.sumP());
 
             req.getRequestDispatcher("admin.jsp").forward(req, resp);
@@ -42,6 +43,9 @@ public class adminController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+//      
+//        
+        
         processRequest(req, resp);
     }
 
