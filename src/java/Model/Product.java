@@ -3,21 +3,17 @@ package Model;
 
 
 public class Product {
-    private int id;
+    private String id;
     private String name;
-    private int price;
+    private String price;
     private String image;
-    private int sum;
+ 
     
-    public Product(int sum){
-    
-    }
-    
-    public Product(String name, int price, String image){
+    public Product(String name, String price, String image){
     
     }
     
-    public Product(int id, String name, int price, String image) {
+    public Product(String id, String name, String price, String image) {
        
         this.id = id;
         this.name = name;
@@ -27,13 +23,13 @@ public class Product {
 
     public Product() {
         
-        this.id = 0;
+        this.id = "null";
         this.name = "null";
-        this.price = 0;
+        this.price = "null";
         this.image = "null";
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -41,7 +37,7 @@ public class Product {
         return name;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
@@ -49,7 +45,7 @@ public class Product {
         return image;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -57,7 +53,7 @@ public class Product {
         this.name = name;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
@@ -67,16 +63,10 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" + "id=" + id + ", name=" + name + ", price=" + price + ", image=" + image + " +  }";
+        return "Product{" + "id=" + id + ", name=" + name + ", price=" + price + ", image=" + image + "  }";
     }
-
-    public int getSum() {
-        return sum;
-    }
-
-    public void setSum(int sum) {
-        this.sum = sum;
-    }
-    
-    
 }
+   
+    
+    
+

@@ -90,7 +90,7 @@
                     <div class="category">
                         <h1 class="product-shoes">Shoes</h1>
                         <div class="insert-product">
-                            <a class="insert" href="insert.jsp">Thêm sản phẩm</a>
+                            <a class="insert" href="insert-image.jsp">Thêm sản phẩm</a>
                         </div>
                     </div>
                     <!--Infomation All Product-->

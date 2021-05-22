@@ -70,26 +70,47 @@
                         </div>
                     </div>
                     <!--Infomation All Product-->
-                    <form action="/Demo/insert-product" method="post">
-                        id: <input type="text" name="product_id"></br>
-                        name: <input type="text" name="product_name"></br>
-                        price: <input type="text" name="product_price"></br>
-                        img: <input type="text" name="product_img"></br>
-
-<!--                        <input type="file" 
-                               class="filepond"
-                               name="filepond"
-                               multiple
-                               data-max-file-size="3MB"
-                               data-max-files="3" />-->
+                    <!--<form action="/Demo/insert-product" method="post">-->
+                    <!--                        id: <input type="text" name="product_id"></br>
+                                            name: <input type="text" name="product_name"></br>
+                                            price: <input type="text" name="product_price"></br>
+                                            img: <input type="text" name="product_img"></br>-->
+                    
 
 
+                    <form  action="insert-product" method="post"  >
+                        <div class="form-group">
+                            <label>ID</label> 
+                            <input type="text" 
+                                   class="form-control" name="product_id" placeholder="Enter id">
+                        </div>
+                        <div class="form-group">
+                            <label>Name Product</label> 
+                            <input type="text" 
+                                   class="form-control" name="product_name" placeholder="Enter name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Photo</label> <br/>
+
+                            <input type="text" 
+                                   class="form-control" name="product_image" placeholder="Nhap ten anh vua up load">
+                        </div>
+                        <div class="form-group">
+                            <label>Price</label> 
+                            <input type="text" 
+                                   class="form-control" name="product_price" placeholder="Enter pride">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-primary">Cancel</button>
+                    </form>            
 
 
 
-                        size: <input type="text" name="product_size"></br>
-                        <input type="submit" value="Submit" />
-                    </form>
+                    <!--                        size: <input type="text" name="product_size"></br>-->
+                    <!--<input type="submit" value="Submit" />-->
+                    <!--</form>-->
 
                 </div>
 
