@@ -94,7 +94,7 @@
                             <label>Photo</label> <br/>
 
                             <input type="text" 
-                                   class="form-control" name="product_image" placeholder="Nhap ten anh vua up load">
+                                   class="form-control" name="product_image" placeholder="Enter image name">
                         </div>
                         <div class="form-group">
                             <label>Price</label> 

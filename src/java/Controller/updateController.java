@@ -42,6 +42,7 @@ public class updateController extends HttpServlet {
             String img = req.getParameter("product-image");
             productDao pd = new productDao();
             pd.updateP(id, name, price, img);
+//            req.getRequestDispatcher("admin-product").forward(req, resp);
             resp.sendRedirect("admin-product");
         }catch(Exception e){
         

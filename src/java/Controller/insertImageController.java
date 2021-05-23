@@ -73,9 +73,9 @@ public class insertImageController extends HttpServlet {
 
         }
         
-        req.getRequestDispatcher("insert.jsp").forward(req, resp);
+//        req.getRequestDispatcher("insert.jsp").forward(req, resp);
         
-//        resp.sendRedirect("insert.jsp");
+        resp.sendRedirect("insert.jsp");
     }
     
    
