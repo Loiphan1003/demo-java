@@ -232,7 +232,7 @@
                                 for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab"
                                 class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
                             <div class="login-space">
-                                <form action="/Demo/login" method="post">
+                                <form action="login" method="post">
                                     <div class="login">
                                         <div class="group"> <label for="user" class="label">Username</label> 
                                             <input id="user" type="text" class="input" placeholder="Enter your username" name="user">
@@ -247,7 +247,7 @@
                                         <div class="foot"> <a href="#">Forgot Password?</a> </div>
                                     </div>
                                 </form>
-                                <form action="" method="get">
+                                <form action="login" method="get">
                                     <div class="sign-up-form">
                                         <div class="group"> <label for="user" class="label">Username</label> 
                                             <input id="user" type="text" class="input" placeholder="Create your Username" name="name"> </div>

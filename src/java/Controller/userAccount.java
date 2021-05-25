@@ -69,25 +69,27 @@ public class userAccount {
     }
 
     public Account insertUser(String name, String pass, String email) {
-        String query = "insert into from Account(name,password.isAdmin,email) values(?,?,0,?)";
+        String query = "insert into Account(name,password,isAdmin,email) values(?,?,0,?)";
         try {
             conn = new connectDB().getConnection();
+            System.out.println(conn.getCatalog() + "Ket noi thanh cong");
             ps = conn.prepareStatement(query);
             ps.setString(1, name);
             ps.setString(2, pass);
             ps.setString(3, email);
-//            ps.executeUpdate();
-            rs = ps.executeQuery();
-            while(rs.next()){
-                Account a = new Account(
-                        rs.getString(1),
-                        rs.getString(2),
-                        rs.getString(3),
-                        rs.getString(4)
-                );
-                return a;            
-            }
-
+            ps.executeUpdate();
+            System.out.println("Thuc hiem query thanh cong");
+//            rs = ps.executeQuery();
+//            while(rs.next()){
+//                Account a = new Account(
+//                        rs.getString(1),
+//                        rs.getString(2),
+//                        rs.getString(3),
+//                        rs.getString(4)
+//                );
+//                return a;            
+//            }
+            System.out.println("Dang ky thanh cong");    
         } catch (Exception e) {
 
         }
@@ -110,7 +112,7 @@ public class userAccount {
                 );
                 return a;
             }
-        
+            
         }catch(Exception e){
         
         }
@@ -121,14 +123,15 @@ public class userAccount {
     
     public static void main(String[] args) {
         userAccount login = new userAccount();
-//        for(Account o : a ){
-//            System.out.println(o);
-//        }
+        List<Account> a = login.getAllAccount();
+        for(Account o : a ){
+            System.out.println(o);
+        }
 
 //        Account a = login.insertUser("loi2", "12345", "phanvuloi.it@gmail.com");
         
-        Account a2 = login.findByName("loi");
-        System.out.println(a2);
+//        Account a2 = login.findByName("loi2");
+//        System.out.println(a2);
 
     }
 }
