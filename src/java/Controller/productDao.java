@@ -155,10 +155,7 @@ public class productDao {
         return null;
     }
     
-    public int save(Product pNew) {
-        getAllProduct().add(pNew);                
-        return 1;
-    }
+   
     
     
     public static void main(String [] args){
