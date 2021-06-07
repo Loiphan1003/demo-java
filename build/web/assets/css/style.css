@@ -300,12 +300,12 @@ html{
     float: left;
 }
 
-.info-product-shoes{
+/*.info-product-shoes{
     
     padding-left: 20px;
     width: 856px;
     float: left;
-}
+}*/
 .info-product{
     padding-top: 30px;
     float: left;
@@ -359,7 +359,16 @@ html{
     color: black;
     font-size: 35px;
     cursor: pointer;
+}
 
+.paging-product{
+    display: block;
+    height: 30px;
+    width: 30px;         
+    padding-left: 457px;
+}
+.paging{
+    float: left;
 }
 /* End: Left-Content*/
 /* Begin: Right-Content*/

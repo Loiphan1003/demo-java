@@ -16,7 +16,7 @@
         <div id="main">
             <div id="header">
                 <ul id="nav">
-                    <li><a href="/Demo/home">HOME</a></li>
+                    <li><a href="/home">HOME</a></li>
                     <li><a href="">BAND</a></li>
                     <li><a href="admin-product">PRODUCT</a></li>
                     <li><a href="">CONTACT</a></li>

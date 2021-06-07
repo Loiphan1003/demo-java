@@ -15,7 +15,7 @@
         <div id="main">
             <div id="header">
                 <ul id="nav">
-                    <li><a href="/Demo/home">HOME</a></li>
+                    <li><a href="/home">HOME</a></li>
                     <li><a href="">BAND</a></li>
                     <li><a href="admin-product">PRODUCT</a></li>
                     <li><a href="">CONTACT</a></li>
@@ -44,7 +44,7 @@
                 </div>
                 <!--End: Search button -->
                 <!--Begin: User-Button-->
-                <a class="user-button" href="/Demo/login.jsp">
+                <a class="user-button" href="/login.jsp">
                     <div>
 
                         <i class="user-icon ti-user"></i>
@@ -103,7 +103,7 @@
                                 <p class="Amount">AMOUNT: 0</p>
                             </div>
                             <div class="image">
-                                <img  src="${o.image}" />
+                                <img src="${o.image}" />
                             </div>
 
                         </div>
@@ -117,6 +117,13 @@
                         </div>
                     </c:forEach>
 
+                    <div class="paging-product">
+                        <c:forEach begin="1" end="3">
+
+                            <button class="paging" type="submit">1</button>
+                        </c:forEach>
+
+                    </div>
                 </div>
 
                 <div class="right-content">
@@ -126,6 +133,8 @@
                     <c:forEach items="${ListA}" var="a">
                         <p class="user-name-all">${a.username}</p>
                     </c:forEach>
+
+
 
 
 

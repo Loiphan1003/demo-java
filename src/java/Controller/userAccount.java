@@ -89,21 +89,21 @@ public class userAccount {
 //                );
 //                return a;            
 //            }
-            System.out.println("Dang ky thanh cong");    
+            System.out.println("Dang ky thanh cong");
         } catch (Exception e) {
 
         }
         return null;
     }
 
-    public Account findByName(String name){
-        String query="select * from Account where name = ? ";
-        try{
+    public Account checkUserExist(String name) {
+        String query = "select * from Account where name = ? ";
+        try {
             conn = new connectDB().getConnection();
             ps = conn.prepareStatement(query);
             ps.setString(1, name);
             rs = ps.executeQuery();
-            while(rs.next()){
+            while (rs.next()) {
                 Account a = new Account(
                         rs.getString(1),
                         rs.getString(2),
@@ -112,15 +112,14 @@ public class userAccount {
                 );
                 return a;
             }
-            
-        }catch(Exception e){
-        
+
+        } catch (Exception e) {
+
         }
-        
+
         return null;
     }
-    
-    
+
     public static void main(String[] args) {
         userAccount login = new userAccount();
         List<Account> a = login.getAllAccount();
@@ -128,10 +127,15 @@ public class userAccount {
             System.out.println(o);
         }
 
-//        Account a = login.insertUser("loi2", "12345", "phanvuloi.it@gmail.com");
+        Account a2 = login.checkUserExist("loi");
+        System.out.println(a2);
         
-//        Account a2 = login.findByName("loi2");
-//        System.out.println(a2);
+        String name = "loi";
+        if(name.equals(a2)){
+            System.out.println("Trung ten trong database");
+        }else{
+            System.out.println("Khong Trung ten trong database");
+        }
 
     }
 }

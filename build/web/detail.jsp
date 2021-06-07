@@ -15,7 +15,7 @@
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="/Demo/home">HOME</a></li>
+                <li><a href="/home">HOME</a></li>
                 <li><a href="">BAND</a></li>
                 <li><a href="">TOUR</a></li>
                 <li><a href="">CONTACT</a></li>
@@ -44,7 +44,7 @@
             </div>
             <!--End: Search button -->
             <!--Begin: User-Button-->
-            <a class="user-button" href="/Demo/login.jsp">
+            <a class="user-button" href="/login.jsp">
                 <div class="">
 
                     <i class="user-icon ti-user"></i>
