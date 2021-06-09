@@ -68,38 +68,29 @@
                         <div class="insert-product">
                             <a class="insert" href="#">Thêm sản phẩm</a>
                         </div>
-                    </div>
-                    <!--Infomation All Product-->
-                    <!--<form action="/Demo/insert-product" method="post">-->
-                    <!--                        id: <input type="text" name="product_id"></br>
-                                            name: <input type="text" name="product_name"></br>
-                                            price: <input type="text" name="product_price"></br>
-                                            img: <input type="text" name="product_img"></br>-->
-                    
-
-
-                    <form  action="insert-product" method="post"  >
+                    </div>                    
+                    <form action="insert-product" method="post" enctype="multipart/form-data" >
                         <div class="form-group">
                             <label>ID</label> 
                             <input type="text" 
-                                   class="form-control" name="product_id" placeholder="Enter id">
-                        </div>
-                        <div class="form-group">
+                                   class="form-control" name="product-id" placeholder="Enter id">
+                        </div><!--
+-->                        <div class="form-group">
                             <label>Name Product</label> 
                             <input type="text" 
-                                   class="form-control" name="product_name" placeholder="Enter name">
+                                   class="form-control" name="product-name" placeholder="Enter name">
                         </div>
 
                         <div class="form-group">
                             <label>Photo</label> <br/>
 
-                            <input type="text" 
-                                   class="form-control" name="product_image" placeholder="Enter image name">
+                            <input type="file" 
+                                   class="form-control" name="product-image" placeholder="Enter photo">
                         </div>
                         <div class="form-group">
                             <label>Price</label> 
                             <input type="text" 
-                                   class="form-control" name="product_price" placeholder="Enter pride">
+                                   class="form-control" name="product-price" placeholder="Enter pride">
                         </div>
 
                         <button type="submit" class="btn btn-primary">Submit</button>

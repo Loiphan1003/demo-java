@@ -21,7 +21,7 @@ public class productDao {
         String query = "select * from Product";
         try{           
             conn = new connectDB().getConnection();
-            System.out.println(conn.getCatalog());
+//            System.out.println(conn.getCatalog());
 //            System.out.println("Ket noi database thanh cong");
             ps =  conn.prepareStatement(query);
             rs = ps.executeQuery();
@@ -35,7 +35,7 @@ public class productDao {
                 ));
             }
             
-//            System.out.println("Lay du lieu thanh cong");
+            System.out.println("Lay du lieu thanh cong");
         }catch(Exception ex){
             System.out.println("Lay du lieu that bai " + ex);
         }
@@ -95,7 +95,7 @@ public class productDao {
         String query = "delete from Product where id = ?";
         try{
             conn = new connectDB().getConnection();
-            System.out.println("Ket noi DB thanh cong");
+//            System.out.println("Ket noi DB thanh cong");
             ps = conn.prepareStatement(query);
             ps.setString(1, id);
             ps.executeUpdate();
@@ -165,6 +165,7 @@ public class productDao {
         for(Product i:p){
             System.out.println(i);
         }
+//        pd.deleteP("1");
     }
 
     

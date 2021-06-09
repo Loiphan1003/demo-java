@@ -90,7 +90,7 @@
                     <div class="category">
                         <h1 class="product-shoes">Shoes</h1>
                         <div class="insert-product">
-                            <a class="insert" href="insert-image.jsp">Thêm sản phẩm</a>
+                            <a class="insert" href="insert.jsp">Thêm sản phẩm</a>
                         </div>
                     </div>
                     <!--Infomation All Product-->
@@ -105,27 +105,33 @@
                             <div class="image">
                                 <img src="${o.image}" />
                             </div>
+                            <!--Nút xóa , chỉnh sữa san pham -->
+                            <div class="buttom">
+                                <a class="update" href="update?pid=${o.id}">
+                                    <i class="buttom-pencil ti-pencil"></i>
+                                </a>
+                                <a class="delete" href="delete?pid=${o.id}">
+                                    <i class="buttom-trash ti-trash"></i>
+                                </a>
+                            </div>
+                        </div>
 
-                        </div>
-                        <div class="buttom">
-                            <a class="update" href="update?pid=${o.id}">
-                                <i class="buttom-pencil ti-pencil"></i>
-                            </a>
-                            <a class="delete" href="delete?pid=${o.id}">
-                                <i class="buttom-trash ti-trash"></i>
-                            </a>
-                        </div>
                     </c:forEach>
-
-                    <div class="paging-product">
+                    <!--<nav aria-label="Page navigation example">-->
+                    <ul class="paging">
+                        <li class="page">
+                            <a class="page-button" href="#">Previous</a>
+                        </li>
                         <c:forEach begin="1" end="3">
+                            <li class="page"><a class="page-number" href="#">1</a></li>
+                            </c:forEach>                        
+                        <li class="page">
+                            <a class="page-button" href="#">Next</a>
+                        </li>
+                    </ul>
+                    <!--</nav>-->
 
-                            <button class="paging" type="submit">1</button>
-                        </c:forEach>
-
-                    </div>
                 </div>
-
                 <div class="right-content">
                     <div class="user-top">
                         <h1 class="user-name">User</h1>
@@ -133,11 +139,6 @@
                     <c:forEach items="${ListA}" var="a">
                         <p class="user-name-all">${a.username}</p>
                     </c:forEach>
-
-
-
-
-
                 </div>
             </div>
 

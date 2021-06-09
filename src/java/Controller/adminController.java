@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = {"/admin-product"})
+@WebServlet(urlPatterns = {"/admin"})
 public class adminController extends HttpServlet {
 
     protected void processRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
