@@ -15,26 +15,24 @@
 <body>
     <div id="main">
         <div id="header">
+            <!--PC-->
             <ul id="nav">
                 <li><a href="">HOME</a></li>
                 <!-- <li><a href="">BAND</a></li> -->
                 <c:if test="${sessionScope.acc.isAdmin == 1}">
                     <li><a href="admin">PRODUCT</a></li>
                 </c:if>
-                <!--                        <li><a href="">CONTACT</a></li>
-                    
-                                            <li>-->
-                <!--                            <a href="">
-                                                    MORE
-                                                    <i class="nav-icon-down ti-angle-down"></i>
-                                                </a>
-                                                <ul class="subnav">
-                                                    <li><a href="">Merchandise</a></li>
-                                                    <li><a href="">Extras</a></li>
-                                                    <li><a href="">Media</a></li>
-                                                </ul>
-                                            </li>-->
             </ul>
+            <!--Mobile-->
+            <label for="nav-mobile-input" id="nav-mobile-buttom">
+                <i class="nav-mobile-view ti-view-list"></i>
+            </label>
+
+            <input type="checkbox" class="nav-input" id="nav-mobile-input">
+            <label for="nav-mobile-input" class="nav-overplay"></label>
+            <nav class="nav-mobile">
+
+            </nav>
             <!--End nav-->
             <!--Begin: Shop button -->
             <div class="shop-button">
@@ -76,8 +74,8 @@
 
                         <img class="card-image" src="./assets/img/5fad0eae5b5b3.jpg" />
 
-                        <h4 class="card-name ">AIR JORDAN 1 RETRO HIGH OG GS UNIVERSITY BLUE</h4>
-                        <p class=" card-price">${o.price} VND</p>
+                        <!-- <h4 class="card-name ">AIR JORDAN 1 RETRO HIGH OG GS UNIVERSITY BLUE</h4>
+                        <p class=" card-price">${o.price} VND</p> -->
                     </div>
                 </a>
             </div>
@@ -87,8 +85,8 @@
 
                         <img class="card-image" src="./assets/img/605479b65d160.jpg" />
 
-                        <h4 class="card-name">${o.name}</h4>
-                        <p class="card-price">${o.price} VND</p>
+                        <!-- <h4 class="card-name">${o.name}</h4>
+                        <p class="card-price">${o.price} VND</p> -->
                     </div>
                 </a>
             </div>

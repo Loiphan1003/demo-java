@@ -19,8 +19,56 @@ html{
     color: black;
 }
 
+#nav-mobile-buttom{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+    display: none;
+}
+#nav-mobile-buttom .nav-mobile-view{
+    font-size: 30px;
+
+}
+.nav-overplay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;    
+    background-color: white;
+    display: none;
+}
+.nav-input{
+    display: none;
+}
+.nav-input:checked ~ .nav-overplay{
+    display: block;
+}
+.nav-input:checked ~ .nav-mobile{
+    display: block;
+}
+
+
+
+
+
+
+
+
 #nav {  
     display: inline-block;
+    float: left;
 }
 
 #nav ul{
@@ -479,6 +527,14 @@ html{
 /* Mobile width < 740px */
 @media only screen and (max-width: 739px) {
     
+    #nav{
+        display: none;
+    }
+    #nav-mobile-buttom{
+        display: block;
+    }
+
+
     .product-form{
         width: 50%;
         height: 200px;
