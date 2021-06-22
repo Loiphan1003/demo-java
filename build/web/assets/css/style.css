@@ -15,7 +15,8 @@ html{
 
 #header {
     height: 46px;
-    background-color: black;
+    background-color: white;
+    color: black;
 }
 
 #nav {  
@@ -35,7 +36,7 @@ html{
 }
 
 #nav > li > a {
-    color: white;
+    color: black;
 }
 
 #nav li a{
@@ -58,7 +59,7 @@ html{
     display: none;
     min-width: 160px;
     position: absolute;
-    background-color: white;
+    background-color: black;
     box-shadow:  0 0 10px rgba(0, 0,0.3);
 }
 
@@ -78,7 +79,7 @@ html{
     padding: 0px 22px;
 }
 #header .shop-icon{
-    color: white;
+    color: black;
     font-size: 20px;
     line-height: 46px;
 }
@@ -96,7 +97,7 @@ html{
     padding: 0px 22px;
 } 
 #header .user-icon{
-    color: white;
+    color: black;
     font-size: 20px;
     line-height: 46px;
 }
@@ -115,7 +116,7 @@ html{
 }
 
 #header .search-icon{
-    color: white;
+    color: black;
     font-size: 20px;
     line-height: 46px;
 }
@@ -136,12 +137,12 @@ html{
 /*Conten*/
 #content{
     height: 1200px;
-    padding:20px 15px ;
+    /* padding:20px 15px ; */
 }
 
 /* Card*/
 .product-form{
-    padding-left: 65px;
+    /* padding-left: 65px; */
     text-decoration: none;
     width: 400px;
     float: left;
@@ -157,30 +158,58 @@ html{
 
 
 .card-image{
-    padding-top: 50%;
-    background-position: center;
-    background-size: cover;
+    width: 100%;
+    /* padding-top: 50%; */
+    /* background-position: center; */
+    /* background-size: cover; */
 }
 .card-name{
     text-decoration: none;
     color: black;
     /* background-position: center; */
-    padding-left: 60px;
+    /* padding-left: 60px; */
 }
 .card-price{
     color: black;
     text-decoration: none;
     padding-left: 60px;
 }
-
+/* Footer*/
 #footer{
-    height: 300px;
+    height: 400px;
     background-color: black;
 }
-.icon-footer{
-    padding-top: 20px;
+.footer-end{
+    margin-top: 50px;
+    /* width: 700px; */
+    height: 200px;
+    /* float: left; */
+    /* margin-left: 425px; */
     color: white;
 }
+.service{
+    /* color: white; */
+    /* width: 200px; */
+    /* height:200px; */
+    /* float: left; */
+}
+.contact{
+    /* float: left; */
+    /* width: 200px; */
+    /* height:200px; */
+}
+.follow{
+    /* width: 200px;
+    height:200px; */
+    /* color: white; */
+    /* float: left; */
+}
+.icon-follow{
+    padding-top: 10px;    
+}
+/* .ti-instagram{
+    padding-top: 10px;
+} */
 /* LOGIN */
 
 
@@ -189,7 +218,7 @@ html{
 #admin-content{
     padding-left: 45px;
     height: 1080px;
-    background-color: grey;
+    background-color: gray;
 }
 
 
@@ -437,3 +466,57 @@ html{
     width: 650px;
     height: 400px;
 }
+/*=============================================================*/
+/* Mobile width < 740px */
+@media only screen and (max-width: 739px) {
+    
+    .product-form{
+        width: 50%;
+    }
+    .product-form .product-detailt{
+        text-decoration: none;
+    }
+    .product-form .card{
+        width: 100%;
+    }               
+    .card-image{
+        width: 100%;
+    }
+    .card-name{
+        font-size: 90%;
+        /* line-height: 20px; */
+        /* direction: ltr; */
+        color: black;
+        width: 100%;
+        
+    }    
+   /* }
+    .card-price{
+        color: black;
+        text-decoration: none;
+        padding-left: 60px;
+    } */
+    /* .footer-end{
+        max-width: 739px;   
+        color: white;
+    } */
+    .service{
+        width: 33%;
+        /* height: 80%; */
+        /* color: black; */
+    }
+}
+/* PC*/
+@media only screen and(min-width: 1024) {
+   
+}
+
+
+
+
+
+
+
+
+
+
