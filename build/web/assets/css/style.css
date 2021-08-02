@@ -13,14 +13,56 @@ html{
     background: white;
 }
 
+
 #header {
     height: 46px;
     background-color: white;
     color: black;
 }
 
+#nav-mobile-buttom{
+    float: left;
+    width: 30px;  
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+    display: none;
+}
+#nav-mobile-buttom .nav-mobile-view{
+    font-size: 30px;
+}
+.nav-overplay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;    
+    background-color: white;
+    display: none;
+}
+.nav-input{
+    display: none;
+}
+.nav-input:checked ~ .nav-overplay{
+    display: block;
+}
+.nav-input:checked ~ .nav-mobile{
+    display: block;
+}
+
+
 #nav {  
     display: inline-block;
+    float: left;
 }
 
 #nav ul{
@@ -32,7 +74,7 @@ html{
 }
 
 #nav li {
-   position: relative;
+    position: relative;
 }
 
 #nav > li > a {
@@ -96,6 +138,10 @@ html{
     text-decoration: none;
     padding: 0px 22px;
 } 
+.nav-user{
+    display: none;
+}
+
 #header .user-icon{
     color: black;
     font-size: 20px;
@@ -136,15 +182,15 @@ html{
 
 /*Conten*/
 #content{
-    height: 1200px;
-    /* padding:20px 15px ; */
+    min-height: 1200px;
 }
 
 /* Card*/
 .product-form{
-    /* padding-left: 65px; */
+    padding-left: 26px;
     text-decoration: none;
-    width: 400px;
+    width: 448px;
+    height: 345px;
     float: left;
 }
 .card{
@@ -158,21 +204,15 @@ html{
 
 
 .card-image{
-    width: 100%;
-    /* padding-top: 50%; */
-    /* background-position: center; */
-    /* background-size: cover; */
+    width: 100%; 
 }
 .card-name{
-    text-decoration: none;
     color: black;
-    /* background-position: center; */
-    /* padding-left: 60px; */
+    text-align: center;
 }
 .card-price{
     color: black;
-    text-decoration: none;
-    padding-left: 60px;
+    text-align: center;
 }
 /* Footer*/
 #footer{
@@ -180,30 +220,39 @@ html{
     background-color: black;
 }
 .footer-end{
-    margin-top: 50px;
-    /* width: 700px; */
-    height: 200px;
+    padding-left: 35%;
+    padding-top: 10%;
+    width: 80%;
+    height: 400px;
     /* float: left; */
     /* margin-left: 425px; */
     color: white;
 }
-.service{
-    /* color: white; */
-    /* width: 200px; */
-    /* height:200px; */
-    /* float: left; */
+.footer-end .service{
+    float: left;
+    width: 26%;
+    height: 100%;
+    /* background-color: white; */
+    color: white;
+} 
+.footer-end .contact{
+    float: left;
+    width: 26%;
+    height: 50px;
+    /* background-color: white; */
+    color: white;
+    /* color: black; */
 }
-.contact{
-    /* float: left; */
-    /* width: 200px; */
-    /* height:200px; */
+.footer-end .follow{
+    float: left;
+    width: 26%;
+    height: 50px;
+    /* background-color: white; */
+    color: white;
 }
-.follow{
-    /* width: 200px;
-    height:200px; */
-    /* color: white; */
-    /* float: left; */
-}
+
+
+
 .icon-follow{
     padding-top: 10px;    
 }
@@ -470,8 +519,17 @@ html{
 /* Mobile width < 740px */
 @media only screen and (max-width: 739px) {
     
+    #nav{
+        display: none;
+    }
+    #nav-mobile-buttom{
+        display: block;
+    }
+
+
     .product-form{
         width: 50%;
+        height: 170px;
     }
     .product-form .product-detailt{
         text-decoration: none;
@@ -483,33 +541,41 @@ html{
         width: 100%;
     }
     .card-name{
-        font-size: 90%;
-        /* line-height: 20px; */
-        /* direction: ltr; */
+        font-size: 100%;
         color: black;
-        width: 100%;
-        
-    }    
-   /* }
-    .card-price{
-        color: black;
-        text-decoration: none;
-        padding-left: 60px;
-    } */
-    /* .footer-end{
-        max-width: 739px;   
-        color: white;
-    } */
-    .service{
-        width: 33%;
-        /* height: 80%; */
-        /* color: black; */
+        height: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-}
-/* PC*/
-@media only screen and(min-width: 1024) {
+    #footer{
+        height: 700px;
+    }
+    .footer-end{
+        padding-top: 0%;
+        padding-left: 0%;
+        width: 100%;
+        height: 100%;        
+    }   
+    .footer-end .service{
+        float: none;
+        width: 100%;
+        height: 150px;        
+    } 
+    .footer-end .contact{
+        float: none;
+        height: 150px;        
+    }
+    .footer-end .follow{    
+        float: none;
+        height: 150px;        
+    }
    
 }
+/* PC*/
+/* @media only screen and(min-width: 1024) {
+   
+} */
 
 
 

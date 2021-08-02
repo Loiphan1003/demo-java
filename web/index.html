@@ -1,5 +1,5 @@
 <!-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    <%@page language="java" contentType="text/html" pageEncoding="UTF-8" %> -->
+    <%@page language="java" contentType="text/html" pageEncoding="UTF-8" %>  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +31,10 @@
             <input type="checkbox" class="nav-input" id="nav-mobile-input">
             <label for="nav-mobile-input" class="nav-overplay"></label>
             <nav class="nav-mobile">
-
+                <label for="nav-mobile-input" class="nav-close ti-close"></label>
+                <li>Account</li>
+                <li>Product</li>
+                <li></li>
             </nav>
             <!--End nav-->
             <!--Begin: Shop button -->
@@ -69,24 +72,31 @@
         <div id="content">
             <!-- <c:forEach items="${ListP}" var="o"> -->
             <div class="product-form">
-                <a class="product-detailt" href="detail?pid=${o.id}">
+                <a class="product-detailt" href="<!--detail?pid=${o.id}--> detail.html">
                     <div class="card">
 
                         <img class="card-image" src="./assets/img/5fad0eae5b5b3.jpg" />
 
-                        <!-- <h4 class="card-name ">AIR JORDAN 1 RETRO HIGH OG GS UNIVERSITY BLUE</h4>
-                        <p class=" card-price">${o.price} VND</p> -->
+                        <h4 class="card-name ">AIR JORDAN 1 RETRO HIGH OG GS UNIVERSITY BLUE</h4>
+                        <p class=" card-price">8.000.000 VND</p>
                     </div>
                 </a>
-            </div>
-            <div class="product-form">
                 <a class="product-detailt" href="detail?pid=${o.id}">
                     <div class="card">
 
                         <img class="card-image" src="./assets/img/605479b65d160.jpg" />
 
-                        <!-- <h4 class="card-name">${o.name}</h4>
-                        <p class="card-price">${o.price} VND</p> -->
+                        <h4 class="card-name">${o.name}</h4>
+                        <p class="card-price">${o.price} VND</p>
+                    </div>
+                </a>
+                <a class="product-detailt" href="detail?pid=${o.id}">
+                    <div class="card">
+
+                        <img class="card-image" src="./assets/img/605479b65d160.jpg" />
+
+                        <h4 class="card-name">${o.name}</h4>
+                        <p class="card-price">${o.price} VND</p>
                     </div>
                 </a>
             </div>
