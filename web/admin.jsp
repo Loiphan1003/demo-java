@@ -15,20 +15,10 @@
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="/home">HOME</a></li>
+                <li><a href="/Demo/home">HOME</a></li>
                 <li><a href="admin-product">PRODUCT</a></li>
 
-                <!-- <li>
-                    <a href="">
-                        MORE
-                        <i class="nav-icon-down ti-angle-down"></i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
-                    </ul>
-                </li> -->
+                
             </ul>
             <!--End nav-->
             <!--Begin: Shop button -->
@@ -95,8 +85,8 @@
                 <c:forEach items="${ListP}" var="o">
                     <div class="info-product-shoes">
                         <div class="info-product">
-                            <p class="id" name="product_id">ID: ${o.id}</p>
-                            <p class="name" name="product_name">NAME: ${o.name}</p>
+                            <p class="id" >ID: ${o.id}</p>
+                            <p class="name" >NAME: ${o.name}</p>
                             <p class="price">PRICE: ${o.price}</p>
                             <p class="Amount">AMOUNT: 0</p>
                         </div>

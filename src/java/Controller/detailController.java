@@ -1,6 +1,7 @@
 
 package Controller;
 
+import DAO.productDao;
 import Model.Product;
 import java.io.IOException;
 import javax.servlet.ServletException;
